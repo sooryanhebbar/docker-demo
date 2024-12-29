@@ -7,8 +7,8 @@ const app = express();
 const userRoutes = require('./routes/userRoutes');
 
 // MongoDB Connection
-const DB_USERNAME = process.env.DB_USERNAME || 'admin';
-const DB_PASSWORD = process.env.DB_PASSWORD || 'password';
+const DB_USERNAME = process.env.MONGO_DB_USERNAME || 'admin';
+const DB_PASSWORD = process.env.MONGO_DB_PWD || 'password';
 const DB_NAME = 'users';
 const DB_HOST = 'localhost'; // or the hostname/IP where MongoDB is hosted
 const DB_PORT = '27017'; // default MongoDB port
